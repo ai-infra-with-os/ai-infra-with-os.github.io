@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Infra with OS — ATC 2026 Tutorial | Hong Kong</title>
+    <meta name="description"
+        content="The ACM SIGOPS ATC 2026 Tutorial on AI Infrastructure with Operating Systems. A full afternoon of tech talks, demos and an evening banquet in Hong Kong.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon (inline SVG, no external file needed) -->
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230f142d'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%2322d3ee' font-family='sans-serif' font-weight='bold'%3EAI%3C/text%3E%3C/svg%3E">
+</head>
+
+<body>
+    <!-- ===================== Navigation ===================== -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#top">AI Infra with OS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#topics">Topics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#program">Program</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#venue">Venue</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#dates">Dates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#organizers">Organizers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <span id="top"></span>
+
+    <!-- ===================== Hero Section ===================== -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-10">
+                    <h1 class="display-3 fw-bold mb-3">AI Infra with OS</h1>
+                    <p class="lead mb-3">ACM SIGOPS ATC 2026 Tutorial</p>
+                    <p class="hero-subtitle">AI Infrastructure with Operating Systems &middot; Hong Kong</p>
+                    <div class="hero-badges">
+                        <span class="hero-badge"><span class="badge-emoji">🏙️</span> Hong Kong</span>
+                        <span class="hero-badge"><span class="badge-emoji">🕑</span> Afternoon &amp; Evening</span>
+                        <span class="hero-badge"><span class="badge-emoji">🎤</span> 7 Tech Talks &amp; Demos</span>
+                        <span class="hero-badge"><span class="badge-emoji">🥂</span> Banquet</span>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="#program" class="btn-hero-primary">View the Schedule</a>
+                        <a href="#overview" class="btn-hero-ghost">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-lights" aria-hidden="true"></div>
+    </header>
+
+    <!-- ===================== Main Content ===================== -->
+    <main class="container my-5">
+
+        <!-- Overview -->
+        <section id="overview" class="content-section">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="section-title">Overview</h2>
+                    <div class="card content-card">
+                        <div class="card-body">
+                            <p>Large-scale artificial intelligence — from foundation-model training to trillion-parameter
+                                inference and agentic systems — is reshaping the demands placed on every layer of the
+                                computing stack. Yet the systems software that mediates between models and hardware
+                                remains the linchpin of performance, efficiency, cost and reliability.</p>
+                            <p>This <strong>ACM SIGOPS ATC 2026 tutorial</strong> brings together researchers and
+                                practitioners to survey the design of <strong>operating systems and infrastructure
+                                    for AI workloads</strong>. Across a single afternoon we will move from first
+                                principles to deployed case studies, covering the OS, runtime and cluster-level
+                                mechanisms that make modern AI systems practical at scale.</p>
+                            <p class="mb-0">The tutorial is co-located with ACM SIGOPS ATC 2026 in <strong>Hong Kong</strong>
+                                and concludes with a banquet overlooking Victoria Harbour — a chance to continue the
+                                conversation with speakers and fellow attendees.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Topics -->
+        <section id="topics" class="content-section">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="section-title">Topics</h2>
+                    <div class="card content-card">
+                        <div class="card-body">
+                            <p>The tutorial spans the intersection of operating systems and AI infrastructure. Topics
+                                of interest include, but are not limited to:</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="topic-list">
+                                        <li>OS support for GPUs, NPUs &amp; accelerators</li>
+                                        <li>Memory &amp; storage hierarchy for large models</li>
+                                        <li>Scheduling for ML training &amp; serving</li>
+                                        <li>Kernels, drivers &amp; runtime systems for AI</li>
+                                        <li>Resource disaggregation (CXL, PIM, RDMA)</li>
+                                        <li>System observability for AI workloads</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="topic-list">
+                                        <li>Large-scale model serving infrastructure</li>
+                                        <li>Checkpointing, fault tolerance &amp; recovery</li>
+                                        <li>Communication &amp; collective optimization</li>
+                                        <li>Energy, power &amp; thermal management</li>
+                                        <li>Confidential &amp; trusted AI execution</li>
+                                        <li>AI for systems &amp; systems for AI</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program -->
+        <section id="program" class="content-section">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="section-title">Program</h2>
+                    <div class="card content-card">
+                        <div class="card-body">
+                            <div class="alert alert-info mb-4">
+                                <strong>At a glance:</strong> The tutorial runs through the afternoon of the ATC 2026
+                                tutorial day, opening with an invited speech, followed by seven tech talks &amp; demo
+                                cases with a 20-minute tea break, and an evening banquet by the harbour.
+                            </div>
+
+                            <div class="program-schedule">
+
+                                <!-- Opening / Open Speech -->
+                                <div class="program-block">
+                                    <div class="program-highlight">
+                                        <span class="program-emoji" aria-hidden="true">📣</span>
+                                        <span>Open Speech</span>
+                                    </div>
+                                    <div class="program-time">14:00 - 14:30</div>
+                                    <div class="opening-card">
+                                        <div class="opening-title">AI Infra with OS: From Bare Metal to
+                                            Trillion-Parameter Workloads</div>
+                                        <div class="opening-speaker">Tutorial Chair</div>
+                                        <div class="opening-affiliation">AI Infra with OS Organizing Committee</div>
+                                        <p class="opening-abstract mb-0">An opening talk framing the tutorial: why the
+                                            operating system is the frontier of AI infrastructure, what has changed in
+                                            the last two years, and the open problems the afternoon's speakers will
+                                            address.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Session 1: Tech Talks & Demo Cases -->
+                                <div class="program-block">
+                                    <div class="program-session">
+                                        <span class="program-emoji" aria-hidden="true">⚙️</span>
+                                        <span>Tech Talks &amp; Demo Cases — Part I</span>
+                                    </div>
+                                    <div class="program-time">14:30 - 15:45</div>
+                                    <div class="program-talks">
+                                        <div class="program-talk">
+                                            <span class="talk-time">14:30 - 14:55</span>
+                                            <div class="talk-details">
+                                                <div class="talk-title">OS-Level Scheduling for LLM Training
+                                                    Clusters</div>
+                                                <div class="talk-meta">Talk 1</div>
+                                                <div class="talk-affiliation">Systems for ML</div>
+                                            </div>
+                                        </div>
+                                        <div class="program-talk">
+                                            <span class="talk-time">14:55 - 15:20</span>
+                                            <div class="talk-details">
+                                                <div class="talk-title">Memory Disaggregation for Large-Model Serving
+                                                    with CXL</div>
+                                                <div class="talk-meta">Talk 2</div>
+                                                <div class="talk-affiliation">Disaggregated Infrastructure</div>
+                                            </div>
+                                        </div>
+                                        <div class="program-talk">
+                                            <span class="talk-time">15:20 - 15:45</span>
+                                            <div class="talk-details">
+                                                <div class="talk-title">Demo: A GPU Runtime for Fast Checkpoint &amp;
+                                                    Recovery</div>
+                                                <div class="talk-meta">Demo Case 1</div>
+                                                <div class="talk-affiliation">Fault Tolerance &amp; Recovery</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tea Break -->
+                                <div class="program-block break-block">
+                                    <div class="program-break">
+                                        <span class="program-emoji" aria-hidden="true">☕</span>
+                                        <span>Tea Break</span>
+                                    </div>
+                                    <div class="program-time">15:45 - 16:05</div>
+                                </div>
+
+                                <!-- Session 2: Tech Talks & Demo Cases -->
+                                <div class="program-block">
+                                    <div class="program-session">
+                                        <span class="program-emoji" aria-hidden="true">🤖</span>
+                                        <span>Tech Talks &amp; Demo Cases — Part II</span>
+                                    </div>
+                                    <div class="program-time">16:05 - 18:00</div>
+                                    <div class="program-talks">
+                                        <div class="program-talk">
+                                            <span class="talk-time">16:05 - 16:30</span>
+                                            <div class="talk-details">
+                                                <div class="talk-title">Collective Communication Optimization at Scale
+                                                </div>
+                                                <div class="talk-meta">Talk 4</div>
+                                                <div class="talk-affiliation">Networking &amp; Communication</div>
+                                            </div>
+                                        </div>
+                                        <div class="program-talk">
+                                            <span class="talk-time">16:30 - 16:55</span>
+                                            <div class="talk-details">
+                                                <div class="talk-title">Power &amp; Thermal-Aware Scheduling for AI
+                                                    Datacenters</div>
+                                                <div class="talk-meta">Talk 5</div>
+                                                <div class="talk-affiliation">Energy-Efficient Systems</div>
+                                            </div>
+                                        </div>
+                                        <div class="program-talk">
+                                            <span class="talk-time">16:55 - 17:20</span>
+                                            <div class="talk-details">
+                                                <div class="talk-title">Demo: Observability Stack for LLM Serving
+                                                    Latency</div>
+                                                <div class="talk-meta">Demo Case 2</div>
+                                                <div class="talk-affiliation">System Observability</div>
+                                            </div>
+                                        </div>
+                                        <div class="program-talk">
+                                            <span class="talk-time">17:20 - 17:40</span>
+                                            <div class="talk-details">
+                                                <div class="talk-title">Confidential Execution of AI Workloads</div>
+                                                <div class="talk-meta">Talk 6</div>
+                                                <div class="talk-affiliation">Security &amp; Privacy</div>
+                                            </div>
+                                        </div>
+                                        <div class="program-talk">
+                                            <span class="talk-time">17:40 - 18:00</span>
+                                            <div class="talk-details">
+                                                <div class="talk-title">Panel &amp; Open Discussion: The Next OS for AI
+                                                </div>
+                                                <div class="talk-meta">Talk 7 / Closing</div>
+                                                <div class="talk-affiliation">All Speakers</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Banquet -->
+                                <div class="program-block banquet-block">
+                                    <div class="program-highlight">
+                                        <span class="program-emoji" aria-hidden="true">🥂</span>
+                                        <span>Banquet</span>
+                                    </div>
+                                    <div class="program-time">18:30 - 21:00</div>
+                                    <div class="opening-card" style="background: linear-gradient(135deg, rgba(190, 24, 93, 0.08) 0%, rgba(245, 158, 11, 0.08) 100%); border-color: rgba(190, 24, 93, 0.18);">
+                                        <div class="opening-title">Tutorial Banquet by Victoria Harbour</div>
+                                        <div class="opening-affiliation">Evening reception with all speakers &amp;
+                                            attendees</div>
+                                        <p class="opening-abstract mb-0">Join us for the tutorial banquet overlooking
+                                            the Hong Kong skyline — an informal evening to continue the day's
+                                            discussions, meet the speakers, and enjoy the city's renowned harbour
+                                            views.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Venue -->
+        <section id="venue" class="content-section">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="section-title">Venue</h2>
+                    <div class="venue-banner">
+                        <div class="venue-content">
+                            <h3>Hong Kong</h3>
+                            <p><strong>Co-located with ACM SIGOPS ATC 2026</strong></p>
+                            <p>The tutorial is held in Hong Kong, in Asia's leading international finance and technology
+                                hub — a city where dense vertical skylines meet one of the world's busiest natural
+                                harbours.</p>
+                            <p class="mb-0">The evening banquet takes place at a venue overlooking Victoria Harbour,
+                                with panoramic views of the city's illuminated skyline.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Important Dates -->
+        <section id="dates" class="content-section">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="section-title">Important Dates</h2>
+                    <div class="card content-card dates-card">
+                        <div class="card-body">
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <div class="date-item">
+                                        <div class="date-label">Tutorial Day</div>
+                                        <div class="date-value">ATC 2026 Week</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="date-item">
+                                        <div class="date-label">Tutorial Hours</div>
+                                        <div class="date-value">14:00 - 18:00</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="date-item">
+                                        <div class="date-label">Banquet</div>
+                                        <div class="date-value">18:30 - 21:00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-center mt-4 mb-0 text-muted-light">All times are in local Hong Kong time
+                                (UTC+8). Exact dates will be announced alongside the ACM SIGOPS ATC 2026 program.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Organizers -->
+        <section id="organizers" class="content-section">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="section-title">Organizers</h2>
+
+                    <h3 class="subsection-title">Tutorial Chairs</h3>
+                    <div class="organizer-grid mb-4">
+                        <div class="organizer-card">
+                            <div class="organizer-name"><a href="#">Chair Name</a></div>
+                            <div class="organizer-affil">Affiliation, Hong Kong</div>
+                            <span class="organizer-role">Tutorial Chair</span>
+                        </div>
+                        <div class="organizer-card">
+                            <div class="organizer-name"><a href="#">Co-Chair Name</a></div>
+                            <div class="organizer-affil">Affiliation</div>
+                            <span class="organizer-role">Tutorial Co-Chair</span>
+                        </div>
+                    </div>
+                    <div class="card content-card mb-4">
+                        <div class="card-body">
+                            <p class="mb-0">Don't hesitate to reach out to the tutorial chairs for any questions about
+                                the program, registration, or logistics.</p>
+                        </div>
+                    </div>
+
+                    <h3 class="subsection-title">Program Committee</h3>
+                    <div class="card content-card">
+                        <div class="card-body">
+                            <ul class="mb-0">
+                                <li>Speaker / Committee Member, Affiliation</li>
+                                <li>Speaker / Committee Member, Affiliation</li>
+                                <li>Speaker / Committee Member, Affiliation</li>
+                                <li>Speaker / Committee Member, Affiliation</li>
+                                <li>Speaker / Committee Member, Affiliation</li>
+                                <li>Speaker / Committee Member, Affiliation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="content-section">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="section-title">Contact</h2>
+                    <div class="card content-card">
+                        <div class="card-body">
+                            <ul class="mb-0">
+                                <li>GitHub: <a href="https://github.com/ai-infra-with-os"
+                                        target="_blank" rel="noopener">ai-infra-with-os</a></li>
+                                <li>Repository: <a
+                                        href="https://github.com/ai-infra-with-os/ai-infra-with-os.github.io"
+                                        target="_blank" rel="noopener">ai-infra-with-os/ai-infra-with-os.github.io</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===================== Footer ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="footer-brand mb-1">AI Infra with OS</p>
+                    <p class="mb-2">ACM SIGOPS ATC 2026 Tutorial &middot; Hong Kong</p>
+                    <p class="mb-0 small">
+                        &copy; 2026 AI Infra with OS Tutorial &middot;
+                        <a href="https://github.com/ai-infra-with-os" target="_blank" rel="noopener">GitHub</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Smooth Scrolling + Navbar scroll state -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href === '#' || href.length < 2) return;
+                const target = document.querySelector(href);
+                if (target) {
+                    e.preventDefault();
+                    const navbar = document.querySelector('.navbar');
+                    const navbarHeight = navbar ? navbar.offsetHeight : 0;
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navbarHeight - 20;
+                    window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+                    const navbarCollapse = document.querySelector('.navbar-collapse');
+                    if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+                        const bs = bootstrap.Collapse.getInstance(navbarCollapse);
+                        if (bs) bs.hide();
+                    }
+                }
+            });
+        });
+
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (!navbar) return;
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>

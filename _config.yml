@@ -1,0 +1,25 @@
+# Jekyll configuration for the AI Infra with OS ATC 2026 Tutorial site
+title: "AI Infra with OS — ATC 2026 Tutorial"
+description: >-
+  The ATC 2026 Tutorial on AI Infrastructure with Operating Systems,
+  co-located with ACM SIGOPS ATC 2026 in Hong Kong.
+baseurl: ""
+url: "https://ai-infra-with-os.github.io"
+markdown: kramdown
+theme: null
+include:
+  - index.html
+  - style.css
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+plugins: []
+sass:
+  style: compressed
+webrick:
+  headers:
+    Cache-Control: "no-cache"
