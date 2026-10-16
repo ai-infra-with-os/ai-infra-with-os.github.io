@@ -101,7 +101,7 @@ body {
     background-color: #0a121b;
     overflow: hidden;
     width: 100%;
-    min-height: 600px;
+    min-height: 900px;
     display: flex;
     align-items: center;
 }
