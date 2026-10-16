@@ -122,17 +122,23 @@
             <div class="prose">
                 <p>The proliferation of large language models, AI agents and embodied
                     intelligence is reshaping the interaction paradigm between humans, devices
-                    and computing systems. Today's mainstream operating systems are still
-                    designed around application-centric abstractions and human-driven
-                    interaction, which creates fundamental mismatches for AI-native workloads:
-                    inefficient GUI-based agent execution, coarse-grained permission mechanisms
-                    for cross-application data flows, lack of system-level resource orchestration
+                    and computing systems. This shift calls for rethinking OS primitives,
+                    kernel abstraction, and system software stacks for AI-native workloads.
+                    Today's mainstream operating systems are still designed around
+                    application-centric abstractions and human-driven interaction, which
+                    creates fundamental mismatches for AI-native workloads: inefficient
+                    GUI-based agent execution, coarse-grained permission mechanisms for
+                    cross-application data flows, lack of system-level resource orchestration
                     for heterogeneous edge-cloud inference, and insufficient deterministic
                     guarantees for mission-critical intelligent scenarios.</p>
-                <p>This tutorial aims to bring together researchers, engineers and practitioners
-                    from operating system, cloud computing, edge AI, agent systems and embedded
-                    computing communities, to discuss the architectural evolution of operating
-                    systems for the intelligent world. We will examine core challenges including
+                <p>Addressing these mismatches requires re-examining core infrastructure
+                    concerns — CPU/GPU/NPU scheduling, memory management, I/O and data
+                    movement, virtualization and isolation, runtime and serving systems, and
+                    compiler-system co-design — through an OS lens. This tutorial aims to
+                    bring together researchers, engineers and practitioners from operating
+                    system, cloud computing, edge AI, agent systems and embedded computing
+                    communities, to discuss the architectural evolution of operating systems
+                    for the intelligent world. We will examine core challenges including
                     heterogeneous system resource management, LLM serving, agent-native system
                     abstraction, end-cloud collaborative inference runtime, deterministic
                     convergence of intelligent workloads, and security &amp; privacy for
