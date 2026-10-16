@@ -101,7 +101,7 @@ body {
     background-color: #0a121b;
     overflow: hidden;
     width: 100%;
-    min-height: 460px;
+    min-height: 600px;
     display: flex;
     align-items: center;
 }
@@ -130,7 +130,7 @@ body {
     z-index: 2;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 5rem 2rem 4rem;
+    padding: 5.5rem 2rem 4.5rem;
     width: 100%;
 }
 
