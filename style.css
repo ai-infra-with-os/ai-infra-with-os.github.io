@@ -302,32 +302,34 @@ section {
    ======================================================================== */
 
 .banquet-box {
-    margin-top: 1.5rem;
-    padding: 1.2rem 1.5rem;
-    background: var(--paper-off);
-    border: 1px solid var(--rule-soft);
-    border-left: 4px solid var(--accent);
-    border-radius: 4px;
+    margin-top: 2rem;
+    padding: 1.4rem 1.8rem;
+    background: #f0f4f1;
+    border: 1px solid #c8d8d0;
+    border-left: 5px solid var(--accent);
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 .banquet-title {
     font-family: 'Source Serif 4', Georgia, serif;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 700;
-    color: var(--ink);
-    margin-bottom: 0.4rem;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
 }
 
 .banquet-desc {
-    font-size: 0.95rem;
+    font-size: 0.98rem;
     color: var(--ink-soft);
-    line-height: 1.7;
-    margin-bottom: 0.4rem;
+    line-height: 1.75;
+    margin-bottom: 0.5rem;
 }
 
 .banquet-meta {
-    font-size: 0.88rem;
+    font-size: 0.9rem;
     color: var(--ink-faint);
+    font-weight: 500;
 }
 
 /* ========================================================================
