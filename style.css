@@ -233,23 +233,24 @@ section {
 .speakers-list {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .speaker-card {
     display: flex;
     gap: 1.5rem;
-    align-items: flex-start;
+    align-items: stretch;
     padding: 1.5rem;
     background: var(--paper-off);
-    border: 1px solid var(--rule-soft);
-    border-radius: 6px;
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
 }
 
 .speaker-photo {
     flex-shrink: 0;
-    width: 120px;
-    height: 160px;
+    width: 140px;
+    height: 180px;
     overflow: hidden;
     border-radius: 6px;
     background: #ddd;
@@ -262,24 +263,12 @@ section {
     object-position: center top;
 }
 
-.speaker-photo-placeholder {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, #e8f0ed, #d0ddd8);
-    color: var(--accent);
-}
-
-.speaker-photo-placeholder span {
-    font-family: 'Source Serif 4', Georgia, serif;
-    font-size: 2.2rem;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-}
-
 .speaker-info {
     flex: 1;
     min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .speaker-name {
@@ -287,13 +276,13 @@ section {
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--ink);
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.25rem;
 }
 
 .speaker-affil {
     font-size: 0.92rem;
     color: var(--ink-soft);
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.25rem;
 }
 
 .speaker-fellow {
@@ -301,6 +290,8 @@ section {
     font-weight: 600;
     color: var(--accent);
     margin-bottom: 0.6rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--rule-soft);
 }
 
 .speaker-bio {
@@ -314,6 +305,7 @@ section {
     font-size: 0.88rem;
     color: var(--link);
     text-decoration: none;
+    font-weight: 500;
 }
 
 .speaker-link:hover {
