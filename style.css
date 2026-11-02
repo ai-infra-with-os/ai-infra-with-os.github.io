@@ -138,7 +138,7 @@ body {
 }
 
 .hero h1 {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: 'Source Serif 4', Georgia, serif;
     font-size: clamp(2.5rem, 7vw, 5rem);
     font-weight: 700;
     line-height: 1.15;
@@ -200,12 +200,12 @@ section {
 }
 
 .section-title {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: 1.4rem;
-    font-weight: 600;
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 1.6rem;
+    font-weight: 700;
     color: var(--ink);
-    margin-bottom: 1rem;
-    padding-bottom: 0.4rem;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.5rem;
     border-bottom: 2px solid var(--accent);
 }
 
@@ -273,7 +273,7 @@ section {
 }
 
 .speaker-name {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: 'Source Serif 4', Georgia, serif;
     font-size: 1.25rem;
     font-weight: 700;
     color: var(--ink);
@@ -444,7 +444,7 @@ section {
 }
 
 .banquet-title {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: 'Source Serif 4', Georgia, serif;
     font-size: 1.25rem;
     font-weight: 700;
     color: var(--accent);
@@ -516,7 +516,7 @@ footer .footer-inner {
 }
 
 .foot-left strong {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: 'Source Serif 4', Georgia, serif;
     font-weight: 700;
     color: var(--accent);
 }
