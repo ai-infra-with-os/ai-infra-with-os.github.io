@@ -294,12 +294,56 @@ section {
     border-bottom: 1px solid var(--rule-soft);
 }
 
+
 .speaker-bio {
     font-size: 0.92rem;
     color: var(--ink-soft);
     line-height: 1.7;
     margin-bottom: 0.6rem;
 }
+
+/* Talk title + abstract (collapsible) */
+.talk-details {
+    margin-bottom: 0.6rem;
+    border-left: 3px solid var(--accent);
+    border-radius: 0 4px 4px 0;
+    background: rgba(11,61,46,0.04);
+}
+
+.talk-summary {
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--ink);
+    padding: 0.5rem 0.8rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.talk-summary::-webkit-details-marker { display: none; }
+
+.talk-summary::before {
+    content: '▶';
+    font-size: 0.7rem;
+    color: var(--accent);
+    transition: transform 0.2s ease;
+    display: inline-block;
+}
+
+.talk-details[open] .talk-summary::before {
+    transform: rotate(90deg);
+}
+
+.talk-abstract {
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+    line-height: 1.7;
+    padding: 0 0.8rem 0.6rem 0.8rem;
+    margin: 0;
+}
+
 
 .speaker-link {
     font-size: 0.88rem;
