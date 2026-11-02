@@ -62,8 +62,8 @@ body {
 }
 
 .navbar-brand {
-    font-family: 'Source Serif 4', Georgia, serif;
-    font-size: 1.15rem;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.2rem;
     font-weight: 700;
     color: var(--ink);
     padding: 0;
@@ -137,7 +137,7 @@ body {
 }
 
 .hero h1 {
-    font-family: 'Source Serif 4', Georgia, serif;
+    font-family: 'Playfair Display', Georgia, serif;
     font-size: clamp(2.5rem, 7vw, 5rem);
     font-weight: 700;
     line-height: 1.15;
@@ -199,8 +199,8 @@ section {
 }
 
 .section-title {
-    font-family: 'Source Serif 4', Georgia, serif;
-    font-size: 1.6rem;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.8rem;
     font-weight: 700;
     color: var(--ink);
     margin-bottom: 1.2rem;
@@ -272,8 +272,8 @@ section {
 }
 
 .speaker-name {
-    font-family: 'Source Serif 4', Georgia, serif;
-    font-size: 1.2rem;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.25rem;
     font-weight: 700;
     color: var(--ink);
     margin-bottom: 0.25rem;
@@ -443,8 +443,8 @@ section {
 }
 
 .banquet-title {
-    font-family: 'Source Serif 4', Georgia, serif;
-    font-size: 1.2rem;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.25rem;
     font-weight: 700;
     color: var(--accent);
     margin-bottom: 0.5rem;
@@ -517,7 +517,7 @@ footer .container {
 }
 
 .foot-left strong {
-    font-family: 'Source Serif 4', Georgia, serif;
+    font-family: 'Playfair Display', Georgia, serif;
     font-weight: 700;
     color: var(--accent);
 }
