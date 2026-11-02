@@ -206,18 +206,19 @@
                     <div class="speaker-info">
                         <div class="speaker-name">Zili Shao</div>
                         <div class="speaker-affil">Professor, Dept. of Computer Science &amp; Engineering, CUHK</div>
-                        <div class="speaker-fellow">Associate Editor, ACM TCPS · IEEE TCAD</div>
+                        <div class="speaker-fellow">Embedded Systems · Storage Systems</div>
                         <p class="speaker-bio">
-                            Prof. Zili Shao received his Ph.D. from The University of Texas at Dallas.
-                            His research interests include embedded systems/software, storage systems,
-                            and big data systems. He has published extensively at OSDI, FAST, VLDB,
-                            SIGMOD, ASPLOS, NeurIPS, DAC, and DATE, with a Best Paper Award at SYSTOR.
-                            He serves as Associate Editor for ACM Transactions on Cyber-Physical Systems
-                            and IEEE TCAD.
+                            Zili Shao is a Professor at the Department of Computer Science and
+                            Engineering, The Chinese University of Hong Kong. He received his
+                            Ph.D. degree from The University of Texas at Dallas. Before joining
+                            CUHK in 2018, he was with the Department of Computing, The Hong
+                            Kong Polytechnic University. His current research interests include
+                            embedded software and systems, storage systems and related industrial
+                            applications.
                         </p>
                         <details class="talk-details">
-                            <summary class="talk-summary">Talk: <span class="tba">Title TBA</span></summary>
-                            <p class="talk-abstract"><span class="tba">Abstract TBA</span></p>
+                            <summary class="talk-summary">A Display-Centric Process Model for Fast UI Responsiveness on Touchscreen Android Smartphones</summary>
+                            <p class="talk-abstract">Current Android display systems suffer from performance inefficiencies because their computation-centric process model treats display management as a secondary function. As a result, input and display operations traverse multiple software layers and user-space system services, incurring substantial communication overhead and degrading UI responsiveness. We advocate a display-centric process model built around process-level display management, where display becomes a first-class concern of the process model. In this tutorial, I will introduce our work on improving UI responsiveness by restructuring the display stack and distributing the functionality of conventional system services between the Linux kernel and individual application processes. In the kernel, a Screen Manager directly dispatches input events and composites display buffers; within each application process, dedicated memory regions and shared libraries enable unmodified applications to consume input and submit frames without involving user-space system services. This kernel-application co-design removes redundant IPC and context switches from the critical path. Our Android 14 prototype reduces end-to-end input latency by 90.91% and display latency by 87.93%, while lowering CPU and memory usage and substantially improving scalability as the number of concurrent applications increases.</p>
                         </details>
                         <a href="https://www.cse.cuhk.edu.hk/~shao/" target="_blank" rel="noopener" class="speaker-link">Homepage →</a>
                     </div>
