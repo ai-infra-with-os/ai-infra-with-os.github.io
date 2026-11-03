@@ -247,23 +247,27 @@
                 </div>
                 <div class="speaker-card">
                     <div class="speaker-photo">
-                        <img src="images/speakers/li-li.jpg" alt="Li Li">
+                        <img src="images/speakers/li-li.png" alt="Li Li">
                     </div>
                     <div class="speaker-info">
                         <div class="speaker-name">Li Li</div>
                         <div class="speaker-affil">Assistant Professor, University of Macau</div>
-                        <div class="speaker-fellow">Edge AI · Federated Learning · LLM on Edge</div>
+                        <div class="speaker-fellow">Edge LLM · On-Device Physical AI · Federated Learning</div>
                         <p class="speaker-bio">
-                            Dr. Li Li is an Assistant Professor at the University of Macau. He received
-                            his Ph.D. from The Ohio State University. His research interests include
-                            efficient fine-tuning and inference of LLM on the edge, on-device learning,
-                            mobile/cloud computing, autonomous driving, and distributed learning. He has
-                            published extensively at ATC, MICRO, NeurIPS, ICLR, ICML, ACL, KDD, MobiSys,
-                            SoCC, SenSys, RTSS, and INFOCOM.
+                            Dr. Li Li is an Assistant Professor at the University of Macau, affiliated
+                            with the State Key Laboratory of Internet of Things for Smart City and the
+                            Department of Computer and Information Science. He received his Ph.D. (2018)
+                            and M.S. (2014) degrees from Ohio State University, and his B.S. degree from
+                            Tianjin University in 2011. He has research experience at Shenzhen Institute
+                            of Technology, Chinese Academy of Sciences, Huawei Research, and Microsoft
+                            Research. His research interests include efficient fine-tuning and inference
+                            of LLMs on the edge and on-device physical AI. He has published extensively
+                            in top venues such as ATC, MICRO, NeurIPS (Oral), ICLR, ICML (Spotlight),
+                            ACL, KDD, INFOCOM, RTSS, CVPR, MobiSys, and SoCC.
                         </p>
                         <details class="talk-details">
-                            <summary class="talk-summary">Talk: <span class="tba">Title TBA</span></summary>
-                            <p class="talk-abstract"><span class="tba">Abstract TBA</span></p>
+                            <summary class="talk-summary">Optimizing LLM at the Edge: From Inference and Fine-Tuning to Embodied Systems</summary>
+                            <p class="talk-abstract">Large language models deployed on mobile and edge devices face three constraints: memory, compute, and latency. This talk is organized into three parts—inference optimization, fine-tuning optimization, and on-device embodied systems. In inference optimization, we introduce a hierarchical coordination framework that selectively offloads attention computation and enforces per-layer sub-deadline scheduling, trading a controlled accuracy loss for real-time responsiveness; we also interleave multiple workflows at tile granularity and optimize engine scheduling to saturate mobile NPU throughput. In fine-tuning optimization, we adaptively balance recomputation against compression based on tensor characteristics to break through memory limits, and we design a unified tensor layout that serves both forward and backward passes, eliminating costly layout conversions and accelerating fine-tuning. We then turn to embodied scenarios exemplified by on-device Physical AI (VLA/WAM), present our inference acceleration work for such settings targeting iterative action generation, and conclude that optimizing edge large language models requires moving beyond isolated acceleration toward co-designing workload characteristics, hardware constraints, and scheduling strategies.</p>
                         </details>
                         <a href="https://personal.fic.um.edu.mo/llili/" target="_blank" rel="noopener" class="speaker-link">Homepage →</a>
                     </div>
