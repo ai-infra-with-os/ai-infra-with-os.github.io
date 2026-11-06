@@ -465,6 +465,10 @@ section {
     line-height: 1.4;
 }
 
+.schedule tr.break-row .sched-title-cell {
+    font-weight: 400;
+}
+
 .sched-speaker {
     font-size: 0.86rem;
     color: var(--ink-faint);
