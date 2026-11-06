@@ -325,6 +325,12 @@ section {
     margin: 0 0 0.6rem 0;
 }
 
+.abstract-label {
+    font-weight: 700;
+    color: var(--accent);
+    font-style: italic;
+}
+
 /* Bio — collapsible */
 .bio-details {
     margin-bottom: 0.5rem;
