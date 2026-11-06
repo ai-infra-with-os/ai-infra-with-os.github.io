@@ -507,29 +507,30 @@ section {
 }
 
 /* ========================================================================
-   Organizers — simple list
+   Organizers — single row grid
    ======================================================================== */
 
-.people { margin-top: 0.3rem; }
-
-.person {
+.org-grid {
     display: flex;
-    align-items: baseline;
-    gap: 0.8rem;
-    padding: 0.6rem 0;
-    border-bottom: 1px solid var(--rule-soft);
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 0.3rem;
 }
 
-.person:last-child { border-bottom: none; }
+.org-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
 
-.person-name {
-    font-size: 1.05rem;
+.org-name {
+    font-size: 1rem;
     font-weight: 600;
     color: var(--ink);
 }
 
-.person-role {
-    font-size: 0.82rem;
+.org-role {
+    font-size: 0.8rem;
     color: var(--ink-faint);
 }
 
