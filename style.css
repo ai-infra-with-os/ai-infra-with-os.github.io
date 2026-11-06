@@ -300,37 +300,66 @@ section {
     font-size: 0.92rem;
     color: var(--ink-soft);
     line-height: 1.7;
-    margin-bottom: 0.6rem;
+    margin: 0;
+    padding: 0 0.8rem 0.6rem 0.8rem;
 }
 
-/* Talk title + abstract (collapsible) */
-.talk-details {
-    margin-bottom: 0.6rem;
-    border-left: 3px solid var(--accent);
-    border-radius: 0 4px 4px 0;
-    background: rgba(11,61,46,0.04);
-}
-
-.talk-summary {
-    cursor: pointer;
-    font-size: 0.95rem;
+/* Talk title — always visible, prominent */
+.talk-title-display {
+    font-size: 1.05rem;
     font-weight: 600;
-    color: var(--ink);
-    padding: 0.5rem 0.8rem;
+    color: var(--accent);
+    margin: 0.6rem 0 0.4rem 0;
+    padding-top: 0.6rem;
+    border-top: 1px solid var(--rule-soft);
+    line-height: 1.4;
+}
+
+/* Talk abstract — always visible, body style */
+.talk-abstract-display {
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+    line-height: 1.7;
+    margin: 0 0 0.6rem 0;
+}
+
+/* Bio — collapsible */
+.bio-details {
+    margin-bottom: 0.5rem;
+    border-left: 3px solid var(--rule);
+    border-radius: 0 4px 4px 0;
+    background: var(--paper-off);
+}
+
+.bio-summary {
+    cursor: pointer;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--ink-faint);
+    padding: 0.4rem 0.8rem;
     list-style: none;
     display: flex;
     align-items: center;
     gap: 0.3rem;
+    user-select: none;
 }
 
-.talk-summary::-webkit-details-marker { display: none; }
+.bio-summary::-webkit-details-marker { display: none; }
 
-.talk-summary::before {
+.bio-summary::before {
     content: '▶';
-    font-size: 0.7rem;
-    color: var(--accent);
+    font-size: 0.65rem;
+    color: var(--ink-faint);
     transition: transform 0.2s ease;
     display: inline-block;
+}
+
+.bio-details[open] .bio-summary::before {
+    transform: rotate(90deg);
+}
+
+.bio-details[open] .bio-summary {
+    color: var(--ink-soft);
 }
 
 .talk-details[open] .talk-summary::before {
